@@ -1,4 +1,4 @@
-package bank;
+
 import java.util.*;
 public class Bank {
 	private List<Customer> customers;
@@ -18,7 +18,7 @@ public class Bank {
 	public void openAccount(Customer customer, double balnce) {
 		Account account = new Account(customer, balnce);
 		accounts.add(account);
-		System.out.println("account for " + cutomer.getName() + "created");
+		System.out.println("account for " + customer.getName() + "created");
 		System.out.println("Balance: " + account.getBalance());
 	}
 	public void deposite(Account account, double amount) {

@@ -1,4 +1,4 @@
-package bank;
+
 import java.util.*;
 public class Account {
 	private int accountId;
