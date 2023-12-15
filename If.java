@@ -6,6 +6,7 @@ public class If {
 		// TODO Auto-generated method stub
 		Scanner inp = new Scanner(System.in);
 		System.out.println("Enter a number: ");
+		System.out.println("testing eclipes");
 		int num = inp.nextInt();
 		if (num > 0) {
 			System.out.println("The number is posetive.");
