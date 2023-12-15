@@ -10,7 +10,7 @@ public class Bank {
 	}
 	public void addCustomer(Customer cutomer) {
 		customers.add(cutomer);
-		System.out.println("Cusomer " + cutomer.getName() + "Added");
+		System.out.println("Cusomer " + cutomer.getName() + " Added");
 	}
 	public void removeCustomer(Customer customer) {
 		customers.remove(customer);
@@ -18,7 +18,7 @@ public class Bank {
 	public void openAccount(Customer customer, double balnce) {
 		Account account = new Account(customer, balnce);
 		accounts.add(account);
-		System.out.println("account for " + customer.getName() + "created");
+		System.out.println("account for " + customer.getName() + " created");
 		System.out.println("Balance: " + account.getBalance());
 	}
 	public void deposite(Account account, double amount) {
