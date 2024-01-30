@@ -33,6 +33,10 @@ public class Bank {
 	}
 	
 	public void withdraw(Account account, double amount) {
+		if (amount <= 0) {System.out.println("Cannot withdraw zero or negative value.");}
+		if (amount < account.getBalance()) {
+			System.out.println("You don't have that much in your balance.");
+		}
 		account.setBalance(account.getBalance() - amount);
 	}
 	
