@@ -34,13 +34,14 @@ public class Bank {
 	
 	public void withdraw(Account account, double amount) {
 		if (amount <= 0) {System.out.println("Cannot withdraw zero or negative value.");}
-		if (amount < account.getBalance()) {
+		else if (amount < account.getBalance()) {
 			System.out.println("You don't have that much in your balance.");
 		}
-		account.setBalance(account.getBalance() - amount);
+		else {account.setBalance(account.getBalance() - amount);}
 	}
 	
 	public void transfer(Account account1, Account account2, double amount) {
+		
 		account2.setBalance(account2.getBalance() + amount);
 		account1.setBalance(account1.getBalance() - amount);
 	}
