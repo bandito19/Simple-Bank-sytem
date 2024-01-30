@@ -10,7 +10,7 @@ public class Bank {
 	}
 	public void addCustomer(Customer cutomer) {
 		customers.add(cutomer);
-		System.out.println("Customer " + cutomer.getName() + " Added");
+		System.out.println("Customer " + cutomer.getName() + " Added.");
 	}
 	public void removeCustomer(Customer customer) {
 		customers.remove(customer);
