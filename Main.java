@@ -1,11 +1,9 @@
-
-
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Bank bank = new Bank();
-		Customer mahmoud = new Customer("Mahmoud", 19);
+		Customer mahmoud = new Customer("Mahmoud");
 		
 		bank.addCustomer(mahmoud);
 		

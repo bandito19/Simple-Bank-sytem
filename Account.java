@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Account {
 	private int accountId;
 	private Customer Cutomer;
