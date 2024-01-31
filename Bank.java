@@ -41,7 +41,8 @@ public class Bank {
 		else if (amount < account.getBalance()) {
 			System.out.println("You don't have that much in your balance.");
 		}
-		else {account.setBalance(account.getBalance() - amount);}
+		else {account.setBalance(account.getBalance() - amount);
+		account.setRecord(amount + "Withdrawed in " +getDate());}
 	}
 	
 	public void transfer(Account account1, Account account2, double amount) {
