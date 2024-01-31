@@ -18,6 +18,7 @@ public class Bank {
 	
 	public void removeCustomer(Customer customer) {
 		customers.remove(customer);
+		System.out.println("Customer " + customer.getName() + " Removed.");
 	}
 	
 	public void openAccount(Customer customer, double balance) {
