@@ -36,4 +36,12 @@ public class Account {
 	public void setRecord(String record) {
 		this.History.add(record);
 	}
+	
+	public void History() {
+		System.out.println(this.getCutomer()+" History: ");
+		for(String record : this.History) {
+			System.out.println(record);
+		}
+		System.out.println();
+	}
 }
