@@ -1,4 +1,6 @@
-
+import java.time.LocalTime;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 public class Bank {
 	private List<Customer> customers;
@@ -47,4 +49,17 @@ public class Bank {
 		}
 		else {System.out.println("Invalid transfer.");}
 	}
+	
+	public String getDate() {
+		LocalDate today = LocalDate.now();
+		LocalTime time = LocalTime.now();
+
+		DateTimeFormatter mydate = DateTimeFormatter.ofPattern("E,dd MMM YYY");
+		DateTimeFormatter mytime = DateTimeFormatter.ofPattern("HH mm SS");
+
+		String date = today.format(mydate);
+		String t =time.format(mytime);
+		String dateAndTime = date + " " + t;
+		
+		return dateAndTime;}
 }
