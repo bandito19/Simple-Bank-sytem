@@ -31,7 +31,8 @@ public class Bank {
 	}
 	
 	public void deposite(Account account, double amount) {
-		if (amount > 0) {account.setBalance(account.getBalance() + amount);}
+		if (amount > 0) {account.setBalance(account.getBalance() + amount);
+		account.setRecord(amount +" Deposited in " + getDate());}
 		else {System.out.println("Cannot add zero or negative value.");}
 	}
 	
