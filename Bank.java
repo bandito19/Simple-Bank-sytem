@@ -41,7 +41,7 @@ public class Bank {
 	}
 	
 	public void transfer(Account account1, Account account2, double amount) {
-		if (amount > 0 && amount > account1.getBalance()) {
+		if (amount > 0 && amount < account1.getBalance()) {
 			account2.setBalance(account2.getBalance() + amount);
 			account1.setBalance(account1.getBalance() - amount);
 		}
