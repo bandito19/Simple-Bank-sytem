@@ -49,6 +49,8 @@ public class Bank {
 		if (amount > 0 && amount < account1.getBalance()) {
 			account2.setBalance(account2.getBalance() + amount);
 			account1.setBalance(account1.getBalance() - amount);
+			account1.setRecord(amount + "Transfered to " + account2.getCutomer() + " in " + getDate());
+			account2.setRecord(amount + " transfered from " + account1.getCutomer() + " in " + getDate());
 		}
 		else {System.out.println("Invalid transfer.");}
 	}

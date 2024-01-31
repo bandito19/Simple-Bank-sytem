@@ -25,8 +25,8 @@ public class Account {
 		return this.accountId;
 	}
 	
-	public Customer getCutomer() {
-		return Cutomer;
+	public String getCutomer() {
+		return Cutomer.getName();
 	}
 	
 	public void setCutomer(Customer cutomer) {
