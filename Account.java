@@ -1,7 +1,9 @@
+import java.util.*;
 public class Account {
 	private int accountId;
 	private Customer Cutomer;
 	private double balance;
+	private ArrayList<String> History = new ArrayList<>();
 	
 	public Account(Customer Customer, double balance) {
 		this.setCutomer(Customer);
@@ -22,10 +24,16 @@ public class Account {
 	public int getId() {
 		return this.accountId;
 	}
+	
 	public Customer getCutomer() {
 		return Cutomer;
 	}
+	
 	public void setCutomer(Customer cutomer) {
 		Cutomer = cutomer;
+	}
+	
+	public void setRecord(String record) {
+		this.History.add(record);
 	}
 }
